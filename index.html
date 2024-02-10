@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="keywords" content="ministry, department">
+      <meta name="description" content="Ministry/Department">
+      <meta name="author" content="National Informatics Center">
+      <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+      <link rel="icon" href="assets/images/favicon/favicon.ico">
+      <title>Home | Ministry | Department | GoI</title>
+      <!-- Custom styles for this template -->
+      <link href="assets/css/base.css" rel="stylesheet" media="all">
+      <link href="assets/css/base-responsive.css" rel="stylesheet" media="all">
+      <link href="assets/css/grid.css" rel="stylesheet" media="all">
+      <link href="assets/css/font.css" rel="stylesheet" media="all">
+      <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="all">
+      <link href="assets/css/flexslider.css" rel="stylesheet" media="all">
+      <link href="assets/css/megamenu.css" rel="stylesheet" media="all" />
+      <link href="assets/css/print.css" rel="stylesheet" media="print" />
+      <!-- Theme styles for this template -->
+      <link href="assets/css/megamenu.css" rel="stylesheet" media="all" />
+      <link href="theme/css/site.css" rel="stylesheet" media="all">
+      <link href="theme/css/site-responsive.css" rel="stylesheet" media="all">
+      <link href="theme/css/ma5gallery.css" rel="stylesheet" type="text/css">
+      <link href="theme/css/print.css" rel="stylesheet" type="text/css" media="print">
+      <!-- <link href="theme/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+      <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+      <![endif]-->
+      <!-- Custom JS for this template -->
+      
+      <noscript>
+         <link href="theme/css/no-js.css" type="text/css" rel="stylesheet">
+      </noscript>
+   </head>
+   <body>
+      <div id="fb-root"></div>
+      <header>
+         <div class="region region-header-top">
+            <div id="block-cmf-content-header-region-block" class="block block-cmf-content first last odd">
+               <noscript class="no_scr">"JavaScript is a standard programming language that is included to provide interactive features, Kindly enable Javascript in your browser. For details visit help page"
+               </noscript>
+               <div class="wrapper common-wrapper">
+                  <div class="container common-container four_content top-header">
+                     <div class="common-left clearfix">
+                        <ul>
+                           <li class="gov-india"><span class="responsive_go_hindi" lang="hi"><a target="_blank" href="https://india.gov.in/hi" title="भारत सरकार ( बाहरी वेबसाइट जो एक नई विंडो में खुलती है)" role="link">भारत सरकार</a></span><span class="li_eng responsive_go_eng"><a target="_blank" href="https://india.gov.in/" title="Government of india,External Link that opens in a new window" role="link">Government of india</a></span></li>
+                           <li class="ministry">
+                              <a href="#" target="_blank" alt="Ministry Name" title="मंत्रालय / विभाग नाम"><span class="responsive_minis_hi" lang="hi">मंत्रालय / विभाग नाम</span></a>
+                              <a href="#" target="_blank" alt="Ministry Name" title="Ministry / Department Name"><span class="li_eng responsive_minis_eng">Ministry / Department Name</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="common-right clearfix">
+                        <ul id="header-nav">
+                           <li class="ico-skip cf"><a href="#skipCont" title="">Skip to main content</a>
+                           </li>
+                           <li class="ico-site-search cf">
+                              <a href="javascript:void(0);" id="toggleSearch" title="Site Search">
+                              <img class="top" src="assets/images/ico-site-search.png" alt="Site Search" /></a>
+                              <div class="search-drop both-search">
+                                 <div class="google-find">
+                                    <form method="get" action="http://www.google.com/search" target="_blank">
+                                       <label for="search_key_g" class="notdisplay">Search</label>
+                                       <input type="text" name="q" value="" id="search_key_g"/> 
+                                       <input type="submit" value="Search" class="submit" /> 
+                                       <div>
+                                          <input type="radio" name="sitesearch" value="" id="the_web"/> 
+                                          <label for="the_web">The Web</label> 
+                                          <input type="radio" name="sitesearch" value="india.gov.in" checked id="the_domain"/> <label for="the_domain"> INDIA.GOV.IN</label>
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <div class="find">
+                                    <form name="searchForm" action="">
+                                       <label for="search_key" class="notdisplay">Search</label>
+                                       <input type="text" name="search_key" id="search_key" onKeyUp="autoComplete()" autocomplete="off" required />
+                                       <input type="submit" value="Search" class="bttn-search"/>
+                                    </form>
+                                    <div id="auto_suggesion"></div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="ico-accessibility cf">
+                              <a href="javascript:void(0);" id="toggleAccessibility" title="Accessibility Dropdown" role="link">
+                              <img class="top" src="assets/images/ico-accessibility.png" alt="Accessibility Dropdown" />
+                              </a>
+                              <ul>
+                                 <li> <a onClick="set_font_size(&#39;increase&#39;)" title="Increase font size" href="javascript:void(0);" role="link">A<sup>+</sup></a> </li>
+                                 <li> <a onClick="set_font_size()" title="Reset font size" href="javascript:void(0);" role="link">A<sup>&nbsp;</sup></a> </li>
+                                 <li> <a onClick="set_font_size(&#39;decrease&#39;)" title="Decrease font size" href="javascript:void(0);" role="link">A<sup>-</sup></a> </li>
+                                 <li> <a href="javascript:void(0);" class="high-contrast dark" title="High Contrast" role="link">A</a> </li>
+                                 <li> <a href="javascript:void(0);" class="high-contrast light" title="Normal Contrast" style="display: none;" role="link">A</a> </li>
+                              </ul>
+                           </li>
+                           <li class="ico-social cf">
+                              <a href="javascript:void(0);" id="toggleSocial" title="Social Medias">
+                              <img class="top" src="assets/images/ico-social.png" alt="Social Medias" /></a>
+                              <ul>
+                                 <li><a target="_blank" title="External Link that opens in a new window" href="http://www.facebook.com/"><img alt="Facebook Page" src="assets/images/ico-facebook.png"></a></li>
+                                 <li><a target="_blank" title="External Link that opens in a new window" href="http://www.twitter.com/"><img alt="Twitter Page" src="assets/images/ico-twitter.png"></a></li>
+                                 <li><a target="_blank" title="External Link that opens in a new window" href="http://www.youtube.com/"><img alt="youtube Page" src="assets/images/ico-youtube.png"></a></li>
+                              </ul>
+                           </li>
+                           <li class="ico-sitemap cf"><a href="" title="Sitemap">
+                              <img class="top" src="assets/images/ico-sitemap.png" alt="Sitemap" /></a>
+                           </li>
+                           <li class="hindi cmf_lan d-hide">
+                              <label class="de-lag"><span style="display: none;">Language</span>
+                                 <select title="Select Language">
+                                    <option>English</option>
+                                    <option>हिन्दी</option>
+                                 </select>
+                              </label>
+                           </li>
+                           <li class="hindi cmf_lan m-hide">
+                              <a href="javascript:;" title="Select Language">Language</a> 
+                              <ul>
+                                 <li><a target="_blank" href="" lang="hi" class="alink" title="Click here for हिन्दी version.">हिन्दी</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <p id="scroll" style="display: none;"><span></span></p>
+         </div>
+         <!--Top-Header Section end-->
+
+         <section class="wrapper header-wrapper">
+            <div class="container common-container four_content header-container">
+               <h1 class="logo">                 
+                  <img src="assets/images/Indian-Railways105px.png" alt="Indian Railways" >
+                  <span class="department-title">
+                     <span>
+                        <a href="index.html" title="Home" rel="home" class="header__logo" id="logo"> 
+                           <h1>Government of India, Ministry of Railways</h1>
+                           <h2>Railway Recruitment Board, Bilaspur</h2>
+                        </a>
+                     </span>
+                  </span>
+               </h1>
+               <div class="header-right clearfix">
+                  <div class="right-content clearfix">
+                     <div class="float-element">
+                        <a class="sw-logo" target="_blank" href="https://swachhbharat.mygov.in/" title="Swachh Bharat, External link that opens in a new windows">
+                           <img class="national_emblem" src="assets/images/emblem-dark.png" alt="national emblem" >
+                           <!-- <img src="assets/images/swach-bharat.png" alt="Swachh Bharat"> -->
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+         <!--/.header-wrapper-->
+         <section class="wrapper megamenu-wraper">
+            <h2 style="display: none;">Megamenu</h2>
+            <div class="container common-container four_content header-nav">
+               <p class="showhide" id="showhide"><em></em><em></em><em></em></p>
+               <nav class="main-menu clearfix main-menu1" id="main_menu">
+                  <ul class="nav-menu">
+                     <li> <a href="index.html" class="home"><span>Home</span><i class="fa fa-home"></i></a> </li>
+                     <li>
+                        <a href="about.html">About Us</a>
+                     </li>
+                     <li><a href="inner.html">Notices</a>
+                        <div class="sub-nav col-1">
+                           <ul class="sub-nav-group">
+                              <li><a href="inner.html">Announcements</a></li>
+                              <li><a href="recruitments.html">Recruitments</a></li>
+                              <li><a href="inner.html">Circulars</a></li>
+                              <li><a href="inner.html">Events</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     
+                     <li><a href="inner.html">Media</a>
+                      <div class="sub-nav col-1">
+                           <ul class="sub-nav-group ">
+                              <li><a href="inner.html">What’s New</a></li>
+                              <li><a href="inner.html">Awards</a></li>
+                              <li><a href="inner.html">Photo Gallery</a></li>
+                              <li><a href="inner.html">Video Gallery</a></li>
+                              <li><a href="inner.html">Press Release</a></li>
+                              <li><a href="inner.html">Speeches</a></li>
+                              <li><a href="inner.html">E-Book</a></li>                           
+                           </ul>
+                        </div>
+                     </li>
+
+                     <li><a href="inner.html">Acts & Rules</a>
+                      <div class="sub-nav col-1">
+                           <ul class="sub-nav-group ">
+                              <li><a href="inner.html">Right to Information Act</a></li>
+                              <li><a href="inner.html">Other Act And Rules</a></li>                         
+                           </ul>
+                        </div>
+                     </li>
+
+                     <li>
+                        <a href="inner.html">Tenders</a>
+                        <div class="sub-nav col-1">
+                           <ul class="sub-nav-group">
+                              <li><a href="#">Recent Tenders</a></li>
+                              <li><a href="#">Awarded Tenders</a></li>
+                           </ul>
+                        </div>
+                     </li>
+
+                     <li>
+                        <a href="inner.html">Forms Download</a>
+                        <div class="sub-nav col-1">
+                           <ul class="sub-nav-group">
+                              <li><a href="RRBDB/forms download/SC-ST certificate.pdf">SC / ST</a></li>
+                              <li><a href="RRBDB/forms download/obc certificate.pdf">OBC</a></li>
+                              <li><a href="RRBDB/forms download/obc declaration.pdf">OBC - Declaration</a></li>
+                              <li><a href="RRBDB/forms download/income certificate for EBC.pdf">Income Certificate - EBC</a></li>
+                              <li><a href="RRBDB/forms download/income-asset certificate for EWS.pdf">Income and Assset Certificate - EWS</a></li>
+                              <li><a href="RRBDB/forms download/minority declaration.pdf">Minority Declaration</a></li>
+                              <li><a href="RRBDB/forms download/disability certificate.pdf">PWBD Certificate</a></li>
+                              <li><a href="RRBDB/forms download/vision certificate.pdf">Vision Certificate</a></li>
+                           </ul>
+                        </div>
+                     </li>
+
+                     <li>
+                        <a href="inner.html">Documents</a>
+                        <div class="sub-nav col-1">
+                           <ul class="sub-nav-group">
+                              <li><a href="inner.html">Publications</a></li>
+                              <li><a href="inner.html">Reports</a></li>
+                              <li><a href="inner.html">Office Orders</a></li>
+                              <li><a href="inner.html">Policies</a></li>
+                              <li><a href="inner.html">Budget</a></li>
+                              <li><a href="inner.html">Citizen Charter</a></li>
+                              <li><a href="inner.html">Major Achievements</a></li>
+                           </ul>
+                        </div>
+                     </li>   
+                     
+                     <li><a href="inner.html">Important Links</a></li>
+                     <li><a href="inner.html">Contact Us</a></li>
+                     
+                  </ul>
+               </nav>
+               <nav class="main-menu clearfix" id="overflow_menu">
+                  <ul class="nav-menu clearfix">
+                  </ul>
+               </nav>
+            </div>
+         </section>
+      </header>
+      <!--/.nav-wrapper-->
+      
+      <!-- carousel start -->
+      <section class="wrapper banner-wrapper">
+         <div id="flexSlider" class="flexslider">
+            <ul class="slides">
+               <!-- <li><img src="theme/images/banner/slider-1.jpg" alt="Banner Image 2" title="Banner 2"></li> -->
+               <li> <img src="assets/images/carousel/carousel3.jpg" alt="Banner Image 3" title="Banner 3"></li> 
+               <li> <img src="assets/images/carousel/carousel5.jpg" alt="Banner Image 5" title="Banner 5"></li>
+
+               <li> <img src="assets/images/carousel/carousel4.jpg" alt="Banner Image 4" title="Banner 4"></li>
+               <li> <img src="assets/images/carousel/carousel6.jpg" alt="Banner Image 6" title="Banner 6"></li>
+               <li> <img src="assets/images/carousel/carousel7.jpeg" alt="Banner Image 7" title="Banner 7"></li>
+               <li> <img src="assets/images/carousel/carousel8.jpg" alt="Banner Image 8" title="Banner 8"></li>
+
+            </ul>
+         </div>
+      </section>
+      <div class="wrapper" id="skipCont"></div>
+      <!-- carousel end -->
+
+      <section class="wrapper megamenu-wraper" id="section-padding">
+         <!-- No contents inside -->
+      </section>
+
+
+      <!--/#skipCont-->
+
+
+      <section id="fontSize" class="wrapper body-wrapper ">
+         <h2 style="display: none;">Body</h2>
+         
+         <!-- <div class="bg-wrapper top-bg-wrapper gray-bg padding-top-bott">
+            <div class="container common-container four_content body-container top-body-container padding-top-bott2">
+               <div class="minister clearfix">
+                  <div class="minister-box clearfix">
+                     <div class="minister-sub1 d-flex flex-wrap align-content-center">
+                        <div class="minister-image"><img src="theme/images/minister1.jpg" alt="central minister" title="Hon’ble Minister"></div>
+                        <div class="min-info">
+                           <h4>Hon’ble Minister</h4>
+                           <h3>Minister Name</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="left-block">
+                  <h2><em>Welcome to </em><span>Railway Recruitment Board, Bilaspur</span></h2>
+                  <p>Bilaspur railway division is one of the three railway divisions under South East Central Railway zone of Indian Railways. This railway division was formed on 1 April 1952 and its headquarters is located at Bilaspur in the state of Chhattisgarh of India.</p>
+                  <p>An informative text section that outlines the work portfolio of the ministry and the initiatives/ schemes and other useful purpose that the ministry website serves.</p>
+                  <div class="view-footer"><a href="#" title="Read more about Ministry/Department"><span>Read More</span><i class="fa fa-arrow-right"></i></a></div>
+               </div>
+            </div>
+         </div> -->
+
+         <!-- section 2 start -->
+         <div class="wrapper home-banner">
+            <div class="container common-container four_content banner-container">
+               
+               <div class="left-block">
+                  <!-- child-1 -->
+                  <div class="left-col-2">                    
+                     <div class="slide-content-header">
+                        <h2>What's new </h2><p class="text-slide pause" onclick="changeClass()"></p>
+                     </div>                  
+                     <div class="scroll-text scroll-left">
+                        <ul class="list">
+                           <li><i class="fa fa-arrow-right"></i>
+                              <div class="content">Title of schemes/ services/ event/ activity appears here. </div>
+                           </li>
+                           <li><i class="fa fa-arrow-right"></i>
+                              <div class="content">How to lodge a grievance. </div>
+                           </li>
+                           <li><i class="fa fa-arrow-right"></i>
+                              <div class="content">Activity  1 </div>
+                           </li>
+                           <li><i class="fa fa-arrow-right"></i>
+                              <div class="content">Activity  2 </div>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div class="view-footer">
+                           <a href="#" title="Know More About What's new"><span>More <i class="fa fa-arrow-right"></i></span></a>
+                     </div>
+                  </div>
+
+                  <!-- child-2 -->
+                  <div class="left-col-2"> 
+                     <div class="slide-content-header">
+                        <h2>Press Releases </h2><p class="text-slide1 pause" onclick="changeClass1()"></p>
+                     </div>  
+                  <div class="scroll-text-1 scroll-left">
+                     
+                     <ul class="list">
+                        <li><i class="fa fa-arrow-right"></i>
+                           <div class="content">Official notifications for the media about an event or an official documents adhering to the concern. </div>
+                        </li>
+                        <li><i class="fa fa-arrow-right"></i>
+                           <div class="content">Press release 1 </div>
+                        </li>
+                        <li><i class="fa fa-arrow-right"></i>
+                           <div class="content">Press release 2 </div>
+                        </li>
+                        <li><i class="fa fa-arrow-right"></i>
+                           <div class="content">Press release 3 </div>
+                        </li>
+                     </ul>
+
+                  </div>
+
+                  <div class="view-footer"><a href="#" title="Know More About Press Releases"><span> More <i class="fa fa-arrow-right"></i></span></a></div>
+                  </div>
+               </div>
+
+               <!-- <div class="banner-right-wrapper">
+                  <div class="banner-box-wrapper">
+                     <div class="banner-box banner-box-1">
+                        <a href="#" title="External link that opens in new tab" target="_blank">
+                           <h2>DEPARTMENT</h2>
+                           <p>e-book</p>             
+                        </a>
+                     </div>
+                     <div class="banner-box banner-box-2">                        
+                        <a href="#" title="External link that opens in new tab" target="_blank">
+                           <h2>Knowledge</h2>
+                           <p>Repository</p>
+                        </a>
+                     </div>
+                  </div>
+               </div> -->
+               
+            </div>
+         </div>
+         <!-- section 2 end -->
+
+         <!-- section 3 -->
+         <div class="wrapper home-banner tab-section">
+            <div class="container common-container four_content">
+               <div class="page-tab clearfix">
+                  <div class="page-tab-res clearfix">
+                     <div id="parentHorizontalTab">
+                        <ul class="resp-tabs-list hor_1">
+                           <li><a href="#" id="tab-list-1">Achievements</a></li>
+                           <li><a href="#">Circulars</a></li>
+                           <li><a href="#">Annual Reports</a></li>
+                           <li><a href="#">Downloads</a></li>
+                        </ul>
+                        <div class="resp-tabs-container hor_1" >
+
+                           <div class="clearfix" id="hor_1_tab_item-0">
+                              <div class="col-3">                                                               
+                                 <ul>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Achievements 1 <i class="fa fa-file-pdf-o"></i> (16.02Kb)</a>
+                                    </li>
+                                    <li>                                       
+                                       <a href="#" title="A pdf file">Achievements 2 <i class="fa fa-file-pdf-o"></i> (44.09KB)</a>
+                                    </li>
+                                    <li>                                       
+                                       <a href="#" title="A pdf file">Achievements 3 <i class="fa fa-file-pdf-o"></i> (18.06KB)</a>
+                                    </li>
+                                    <li>                                       
+                                       <a href="#" title="A pdf file">Achievements 4 <i class="fa fa-file-pdf-o"></i> (54.8 KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Achievements 5 <i class="fa fa-file-pdf-o"></i> (37.01KB)</a>
+                                    </li>
+                                    <li>                                       
+                                       <a href="#" title="A pdf file">Achievements 6 <i class="fa fa-file-pdf-o"></i> (23.12KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Achievements 7 <i class="fa fa-file-pdf-o"></i> (42.2KB)</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-3">
+                                 <ul>
+                                    <li>
+                                       <a href="#" title="A pdf file">Achievements 8 <i class="fa fa-file-pdf-o"></i> (50.03KB)</a>
+                                    </li>
+                                    <li>                                       
+                                       <a href="#" title="A pdf file">Achievements 9 <i class="fa fa-file-pdf-o"></i> (22.07Kb)</a>
+                                    </li>
+                                    <li>                                       
+                                       <a href="#" title="A pdf file">Achievements 10 <i class="fa fa-file-pdf-o"></i> (45.03KB)</a>
+                                    </li>
+                                    <li>                                       
+                                       <a href="#" title="A pdf file">Achievements 11 <i class="fa fa-file-pdf-o"></i> (36.08KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Achievements 12 <i class="fa fa-file-pdf-o"></i> (19.08Kb)</a>
+                                    </li>
+                                    <li>                                       
+                                       <a href="#" title="A pdf file">Achievements 13 <i class="fa fa-file-pdf-o"></i> (28.05KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Achievements 14 <i class="fa fa-file-pdf-o"></i> (25.03KB)</a>
+                                    </li>
+                                 </ul>
+                              </div>                                                  
+                              <div class="view-footer-tab"> <a href="#" title="Click here to know more"> <span>Read more </span><i class="fa fa-angle-double-right"></i></a></div>
+                           </div>
+
+                           <div class="clearfix" id="hor_1_tab_item-1">
+                              <div class="col-3">
+                                 <ul>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 1 <i class="fa fa-file-pdf-o"></i> (16.02Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 2 <i class="fa fa-file-pdf-o"></i> (41.04Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 3 <i class="fa fa-file-pdf-o"></i> (86.22Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 4 <i class="fa fa-file-pdf-o"></i> (13.1Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 5 <i class="fa fa-file-pdf-o"></i> (43.1Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 6 <i class="fa fa-file-pdf-o"></i> (55.1Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 7 <i class="fa fa-file-pdf-o"></i> (55.1Kb)</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-3">
+                                 <ul>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 8 <i class="fa fa-file-pdf-o"></i> (16.02Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 9 <i class="fa fa-file-pdf-o"></i> (41.04Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 10 <i class="fa fa-file-pdf-o"></i> (86.22Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 11 <i class="fa fa-file-pdf-o"></i> (13.1Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 12 <i class="fa fa-file-pdf-o"></i> (43.1Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 13 <i class="fa fa-file-pdf-o"></i> (55.1Kb)</a>
+                                    </li>
+                                    <li> 
+                                       <a href="#" title="A pdf file">Circular 14 <i class="fa fa-file-pdf-o"></i> (55.1Kb)</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="view-footer-tab"> <a href="#" title="Click here to know more"> <span>Read more </span><i class="fa fa-angle-double-right"></i></a></div>
+                           </div>
+
+                           <div class="clearfix" id="hor_1_tab_item-2">
+                              <div class="col-3">
+                                 <ul>
+                                    <li>
+                                       <a href="#" title="A pdf file">Annual Report 1 <i class="fa fa-file-pdf-o"></i>(23.48KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Annual Report 2 <i class="fa fa-file-pdf-o"></i>(36.12KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Annual Report 3 <i class="fa fa-file-pdf-o"></i>(19.02KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Annual Report 4 <i class="fa fa-file-pdf-o"></i>(20.98KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Annual Report 5 <i class="fa fa-file-pdf-o"></i>(32.92KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Annual Report 6 <i class="fa fa-file-pdf-o"></i>(40.06KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Annual Report 7 <i class="fa fa-file-pdf-o"></i>(22.07KB)</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-3">
+                                 <ul>
+                                    <li>
+                                       <a href="#" title="A pdf file">Annual Report 8 <i class="fa fa-file-pdf-o"></i>(23.48KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Annual Report 9 <i class="fa fa-file-pdf-o"></i>(36.12KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Annual Report 10 <i class="fa fa-file-pdf-o"></i>(19.02KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Annual Report 11 <i class="fa fa-file-pdf-o"></i>(20.98KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Annual Report 12 <i class="fa fa-file-pdf-o"></i>(32.92KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Annual Report 13 <i class="fa fa-file-pdf-o"></i>(40.06KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Annual Report 14 <i class="fa fa-file-pdf-o"></i>(22.07KB)</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="view-footer-tab"> <a href="#" title="Click here to know more"> <span>Read more </span><i class="fa fa-angle-double-right"></i></a></div>
+                           </div>
+
+                           <div class="clearfix" id="hor_1_tab_item-3">
+                              <div class="col-3">
+                                 <ul>
+                                    <li>
+                                       <a href="#" title="A pdf file">Download 1 <i class="fa fa-file-pdf-o"></i>(23.48KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Download 2 <i class="fa fa-file-pdf-o"></i>(36.12KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Download 3 <i class="fa fa-file-pdf-o"></i>(19.02KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Download 4 <i class="fa fa-file-pdf-o"></i>(20.98KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Download 5 <i class="fa fa-file-pdf-o"></i>(32.92KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Download 6 <i class="fa fa-file-pdf-o"></i>(40.06KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Download 7 <i class="fa fa-file-pdf-o"></i>(22.07KB)</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="col-3">
+                                 <ul>
+                                    <li>
+                                       <a href="#" title="A pdf file">Download 8 <i class="fa fa-file-pdf-o"></i>(23.48KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Download 9 <i class="fa fa-file-pdf-o"></i>(36.12KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Download 10 <i class="fa fa-file-pdf-o"></i>(19.02KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Download 11 <i class="fa fa-file-pdf-o"></i>(20.98KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Download 12 <i class="fa fa-file-pdf-o"></i>(32.92KB)</a>
+                                    </li>
+                                    <li>                                      
+                                       <a href="#" title="A pdf file">Download 13 <i class="fa fa-file-pdf-o"></i>(40.06KB)</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" title="A pdf file">Download 14 <i class="fa fa-file-pdf-o"></i>(22.07KB)</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="view-footer-tab"> <a href="#" title="Click here to know more"> <span>Read more </span><i class="fa fa-angle-double-right"></i></a></div>
+                              
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="side-links clearfix">
+                  <ul class="content_list date-list">
+                     <li>
+                        <a href="#" title="External link that opens in new tab">
+                           <div class="date"><span><img src="theme/images/01.png" alt="Public Information"></span></div>
+                           <div class="list-content">
+                              <h3>Important information 1</h3>
+                              <p>This is a reference text to see the layout. This may be replaced with relevant content.</p>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" title="External links that opens in new tab">
+                           <div class="date"><span><img src="theme/images/02.png" alt="Data Product Generated by ESS0"></span></div>
+                           <div class="list-content">
+                              <h3>Important information 2</h3>
+                              <p>This is a reference text to see the layout. This may be replaced with relevant content.</p>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" title="External link that opens in new tab">
+                           <div class="date"><span><img src="theme/images/03.png" alt="Right to Information"></span></div>
+                           <div class="list-content">
+                              <h3>Important information 3</h3>
+                              <p>This is a reference text to see the layout. This may be replaced with relevant content.</p>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <!-- section 4 -->
+         <!-- <div class="wrapper home-btm-slider">
+            <div class="container common-container four_content gallery-container">
+               <div class="gallery-area clearfix">
+                  <div class="gallery-heading">
+                     <h3>Photo Gallery</h3>
+                     <a class="bttn-more bttn-view" href="#" title="View All About Photo Gallery"><span>View All</span></a> 
+                  </div>
+                  <div class="gallery-holder">
+                     <div id="galleryCarousel" class="flexslider">
+                        <ul class="slides">
+                           <li data-thumb="theme/images/crousal/1.jpg" data-thumb-alt="slider1">
+                              <img src="theme/images/crousal/1.jpg" alt="gallery1" />
+                           </li>
+                           <li data-thumb="theme/images/crousal/2.jpg" data-thumb-alt="slider2">
+                              <img src="theme/images/crousal/2.jpg" alt="gallery2" />
+                           </li>
+                           <li data-thumb="theme/images/crousal/3.jpg" data-thumb-alt="slider3">
+                              <img src="theme/images/crousal/3.jpg" alt="gallery3" />
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery-right">
+                  <div class="video-heading">
+                     <h3>Video Gallery</h3>
+                     <a class="bttn-more bttn-view" href="#" title="View All About video"><span>View All</span></a> 
+                  </div>
+                  <div class="video-wrapper">
+                     <video src="#" poster="theme/images/poster.jpg">
+                        <span>Your browser does not support HTML5 video.</span>
+                     </video>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+      </section>
+
+      
+      <!--/.body-wrapper-->
+      <!--/.banner-wrapper-->
+      <section class="wrapper carousel-wrapper">
+         <h2 style="display: none;">Carousel</h2>
+         <div class="container common-container four_content carousel-container">
+            <div id="flexCarousel" class="flexslider carousel">
+               <ul class="slides">
+                  <li><a target="_blank" href="http://digitalindia.gov.in/" title="Digital India, External Link that opens in a new window"><img src="assets/images/carousel/digital-india.png" alt="Digital India"></a></li>
+                  <li><a target="_blank" href="http://www.makeinindia.com/" title="Make In India, External Link that opens in a new window"> <img src="assets/images/carousel/makeinindia.png" alt="Make In India"></a></li>
+                  <li><a target="_blank" href="http://india.gov.in/" title="National Portal of India, External Link that opens in a new window"><img src="assets/images/carousel/india-gov.png" alt="National Portal of India"></a></li>
+                  <li><a target="_blank" href="http://goidirectory.nic.in/" title="GOI Web Directory, External Link that opens in a new window"><img src="assets/images/carousel/goidirectory.png" alt="GOI Web Directory"></a></li>
+                  <li><a target="_blank" href="https://data.gov.in/" title="Data portal, External Link that opens in a new window" ><img src="assets/images/carousel/data-gov.png" alt="Data portal"></a></li>
+                  <li><a target="_blank" href="https://mygov.in/" title="MyGov, External Link that opens in a new window"><img src="assets/images/carousel/mygov.png" alt="MyGov Portal"></a></li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!--/.carousel-wrapper-->
+      <footer class="wrapper footer-wrapper">
+         <div class="footer-top-wrapper">
+            <div class="container common-container four_content footer-top-container">
+               <ul>
+                  <li><a href="#">Feedback</a></li>
+                  <li><a href="#">Website Policies </a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Web Information Manager </a></li>
+                  <li><a href="#">FAQ’s</a></li>
+                  <li><a href="#">Disclaimer</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-bottom-wrapper">
+            <div class="container common-container four_content footer-bottom-container">
+               <div class="footer-content clearfix">
+                  <div class="copyright-content"> 
+                     Website Content Managed by <strong>Department Name, Ministry Name, <a target="_blank" title="GoI, External Link that opens in a new window" href="https://www.india.gov.in/"><strong>Government of India</strong></a></strong> 
+                     <span>Designed, Developed and Hosted by <a target="_blank" title="NIC, External Link that opens in a new window" href="https://www.nic.in/"><strong>National Informatics Centre</strong></a><strong> (NIC)</strong></span>
+                     <span class="last-updated">Last Updated: <span id="lastupdated"></span></span>
+                  </div>
+
+                  <div class="logo-cmf"> <a target="_blank" title="External link that opens in new tab, cmf" href="http://cmf.gov.in/"><img alt="cmf logo" src="assets/images/cmf-logo.png"></a> </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--/.footer-wrapper-->
+      <!-- jQuery v1.11.1 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha512-nhY06wKras39lb9lRO76J4397CH1XpRSLfLJSftTeo3+q2vP7PaebILH9TqH+GRpnOhfAGjuYMVmVTOZJ+682w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- jQuery Migration v1.4.1 -->
+      <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+      <!-- jQuery v3.6.0 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- jQuery Migration v3.4.0 -->
+      <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+      
+      <script src="assets/js/jquery-accessibleMegaMenu.js"></script>
+      <script src="assets/js/framework.js"></script>
+      <script src="assets/js/jquery.flexslider.js"></script>
+      <script src="assets/js/font-size.js"></script>
+      <script src="assets/js/swithcer.js"></script>
+      <script src="theme/js/ma5gallery.js"></script>
+      <script src="assets/js/megamenu.js"></script>
+      <script src="theme/js/easyResponsiveTabs.js"></script>
+      <script src="theme/js/custom.js"></script>
+     <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+      <script>
+         var d = new Date();
+         var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+         document.getElementById("lastupdated").innerHTML = months[d.getMonth()]+" "+ d.getDate()+", "+d.getFullYear();
+      </script>
+      
+      <script>
+         $(document).ready(function() {
+
+         });
+      </script>
+   </body>
+</html>
