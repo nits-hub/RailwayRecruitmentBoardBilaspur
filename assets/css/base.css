@@ -568,7 +568,7 @@ ul.font-controll li:first-child {
 }
 
 .menu-section{
-	width: 15%;
+	width: 16%;
 	margin-right: 1rem;
 	display: flex;
 	flex-flow: column nowrap;
@@ -589,7 +589,11 @@ ul.font-controll li:first-child {
 }
 
 .about-content-section{
-	width: 75%;
+	width: 100%;
+}
+
+.main-body-content{
+	width:100%;
 }
 /* testing about*/
 
@@ -1468,7 +1472,7 @@ a:focus {
 }
 
 .container.common-container {
-	max-width: 1300px;
+	max-width: 1200px;
 }
 
 .logo {

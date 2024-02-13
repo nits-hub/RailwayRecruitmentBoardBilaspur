@@ -87,6 +87,31 @@ a img{
 }
 
 
+/* results start */
 
+.year-buttons {
+    margin-bottom: 20px;
+}
 
- 
+.year-buttons a {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.year-buttons a:hover {
+    background-color: #0056b3;
+}
+
+.results-container {
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+}
+
+/* results end */
