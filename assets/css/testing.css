@@ -123,10 +123,6 @@ a img{
 	width: fit-content;
 }
 
-/* #r-tr-3{
-	width: fit-content;
-} */
-
 #r-tr-4{
 	width: fit-content;
 }
@@ -146,8 +142,8 @@ table tbody > tr > td > a:hover{
 	color: #002654;
 	text-decoration:underline;
 }
-
 /* results end */
+
 
 /* Notice Board start */
 #nb-tr-1{
@@ -158,12 +154,7 @@ table tbody > tr > td > a:hover{
 	width: fit-content;
 }
 
-/* #nb-tr-3{
-	width: auto;
-} */
-
 #nb-tr-4{
 	width: fit-content;
 }
-
 /* Notice Board end*/
