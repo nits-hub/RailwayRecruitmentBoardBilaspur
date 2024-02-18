@@ -98,15 +98,16 @@ a img{
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #015296;
     color: #fff;
     border: none;
     border-radius: 5px;
+	font-weight: 600;
     transition: background-color 0.3s ease;
 }
 
 .year-buttons a:hover {
-    background-color: #0056b3;
+    background-color: #002654;
 }
 
 .results-container {
@@ -114,23 +115,55 @@ a img{
     padding: 10px;
 }
 
-#tr-1{
-	width:fit-content;
-}
-
-#tr-2{
+#r-tr-1{
 	width: fit-content;
 }
 
-/* table tbody > tr:hover {
-	background-color:rgb(197, 215, 217);
-	transition: background-color 0.15s ease-in-out;
+#r-tr-2{
+	width: fit-content;
+}
+
+/* #r-tr-3{
+	width: fit-content;
 } */
 
+#r-tr-4{
+	width: fit-content;
+}
+
+
+
+
+table tbody > tr > td{
+	font-weight: 550;
+}
+
+table tbody > tr:hover{
+	background-color: #b1d0ec;
+}
+
 table tbody > tr > td > a:hover{
-	color:rgb(40, 22, 207);
-	font-size: 101%;
-	font-weight: 600;
+	color: #002654;
+	text-decoration:underline;
 }
 
 /* results end */
+
+/* Notice Board start */
+#nb-tr-1{
+	width: fit-content;
+}
+
+#nb-tr-2{
+	width: fit-content;
+}
+
+/* #nb-tr-3{
+	width: auto;
+} */
+
+#nb-tr-4{
+	width: fit-content;
+}
+
+/* Notice Board end*/

@@ -575,7 +575,7 @@ ul.font-controll li:first-child {
 	justify-content: flex-start;
 }
 
-.m-child{
+.menu-section > a{
 	font-size: 1rem;
 	text-align: center;
 	box-sizing: border-box;
@@ -586,6 +586,11 @@ ul.font-controll li:first-child {
 	color: white;
 	padding: 10px 0;
 	margin-bottom: 3px;
+	font-weight: 600;
+}
+
+.menu-section > a:hover {
+    background-color: #002654;
 }
 
 .about-content-section{
@@ -1043,7 +1048,7 @@ tr:nth-of-type(odd) {
 }
 
 th {
-	background: #333;
+	background: #001731;
 	color: white;
 	font-weight: bold;
 	white-space: nowrap;
