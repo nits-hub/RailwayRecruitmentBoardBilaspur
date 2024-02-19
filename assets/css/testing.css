@@ -16,6 +16,13 @@ a img{
     height: auto;
 }
 
+/* Home > Acts & Rules - .about-content*/
+#about-content{
+	padding: revert;
+}
+/* Home > Acts & Rules  */
+
+
 /* Home > Notices > Recruitments > How  to fill applications */
 /* Table css */
 .table-container {
@@ -126,9 +133,6 @@ a img{
 #r-tr-4{
 	width: fit-content;
 }
-
-
-
 
 table tbody > tr > td{
 	font-weight: 550;
