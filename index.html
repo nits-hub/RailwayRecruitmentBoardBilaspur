@@ -12,6 +12,7 @@
       <link rel="icon" href="assets/images/favicon/favicon.ico">
       <title>Home | Ministry | Department | GoI</title>
       <!-- Custom styles for this template -->
+      <link href="assets/css/testing.css" rel="stylesheet" media="all">
       <link href="assets/css/base.css" rel="stylesheet" media="all">
       <link href="assets/css/base-responsive.css" rel="stylesheet" media="all">
       <link href="assets/css/grid.css" rel="stylesheet" media="all">
@@ -33,7 +34,6 @@
       <script src="assets/js/respond.min.js"></script>
       <![endif]-->
       <!-- Custom JS for this template -->
-      
       <noscript>
          <link href="theme/css/no-js.css" type="text/css" rel="stylesheet">
       </noscript>
@@ -134,13 +134,13 @@
          <!--Top-Header Section end-->
 
          <section class="wrapper header-wrapper">
-            <div class="container common-container four_content header-container">
+            <div class="container common-container four_content header-container" id="profile-header-container">
                <h1 class="logo">                 
-                  <img src="assets/images/Indian-Railways105px.png" alt="Indian Railways" >
+                  <img src="../assets/images/Indian-Railways105px.png" alt="Indian Railways" >
                   <span class="department-title">
                      <span>
-                        <a href="index.html" title="Home" rel="home" class="header__logo" id="logo"> 
-                           <h1>Government of India, Ministry of Railways</h1>
+                        <a href="../index.html" title="Home" rel="home" class="header__logo" id="logo"> 
+                           <h5 id="removeFormat">Government of India, Ministry of Railways</h5>
                            <h2>Railway Recruitment Board, Bilaspur</h2>
                         </a>
                      </span>
@@ -150,7 +150,7 @@
                   <div class="right-content clearfix">
                      <div class="float-element">
                         <a class="sw-logo" target="_blank" href="https://swachhbharat.mygov.in/" title="Swachh Bharat, External link that opens in a new windows">
-                           <img class="national_emblem" src="assets/images/emblem-dark.png" alt="national emblem" >
+                           <img class="national_emblem" src="../assets/images/emblem-dark.png" alt="national emblem" >
                         </a>
                      </div>
                   </div>
@@ -208,7 +208,7 @@
                               <li><a href="RRBDB/forms download/vision certificate.pdf">Vision Certificate</a></li>
                            </ul>
                         </div>
-                     </li>   
+                     </li>  
                      
                      <li>
                         <a href="">Quick Links</a>
@@ -239,34 +239,61 @@
          <div id="flexSlider" class="flexslider">
             <ul class="slides">
                <!-- <li><img src="theme/images/banner/slider-1.jpg" alt="Banner Image 2" title="Banner 2"></li> -->
-               <li> <img src="assets/images/carousel/carousel3.jpg" alt="Banner Image 3" title="Banner 3"></li> 
-               <li> <img src="assets/images/carousel/carousel5.jpg" alt="Banner Image 5" title="Banner 5"></li>
-               <li> <img src="assets/images/carousel/carousel4.jpg" alt="Banner Image 4" title="Banner 4"></li>
-               <li> <img src="assets/images/carousel/carousel6.jpg" alt="Banner Image 6" title="Banner 6"></li>
-               <li> <img src="assets/images/carousel/carousel7.jpeg" alt="Banner Image 7" title="Banner 7"></li>
-               <li> <img src="assets/images/carousel/carousel8.jpg" alt="Banner Image 8" title="Banner 8"></li>
+               <li> <img src="assets/images/carousel/rrb bilaspur.jpeg" alt="Banner Image 5" title="Bilaspur Railway Jn."></li>
+               <!-- <li> <img src="assets/images/carousel/carousel4.jpg" alt="Banner Image 4" title="Banner 2"></li> -->
             </ul>
          </div>
       </section>
       <div class="wrapper" id="skipCont"></div>
       <!-- carousel end -->
 
-      <section class="wrapper megamenu-wraper" id="section-padding">
-         <!-- No contents inside -->
-      </section>
-
-
+      <section class="wrapper megamenu-wraper" id="section-padding"><!-- No contents to be filled inside --></section>
       <!--/#skipCont-->
 
-
       <section id="fontSize" class="wrapper body-wrapper ">
-         <h2 style="display: none;">Body</h2>
-
          <!-- section 2 start -->
          <div class="wrapper home-banner">
             <div class="container common-container four_content banner-container">
                
-               
+               <div class="card-container">
+                  <!-- child 1 -->
+                  <div class="announcements-card">
+                     <div class="card-header">
+                        <h3><img src="assets/images/announcement.png"> Notifications</h3>
+                     </div>
+
+                     <div class="card-body">
+                           <ul class="card-list">
+                                 <a href="RRBDB/Notice Board/RRB Tentative Calendar1 17.01.2024.pdf"><li><h5 class="head-5">CEN 01/2024</h5>Annual Calendar for RRB Recruitment</li></a>
+                                 <a href="RRBDB/Notice Board/Corrigendum CEN 01-2024 dt 29012024.pdf"><li><h5 class="head-5">CEN 01/2024</h5>Tentative Timelines for Recruitment of ALPs</li></a>
+                                 <a href="RRBDB/Notice Board/Corrigendum CEN 01-2024 dt 29012024.pdf"><li><h5 class="head-5">CEN 01/2024</h5>Recruitment of Assistant Loco Pilot - (Corrigendum to para 5.0 and 5.2 )</li></a>
+                                 <a href="RRBDB/Notice Board/FAQ CEN 01_2024 _ 23.01.2024.pdf"><li><h5 class="head-5">CEN 01/2024</h5>FAQ (Frequently Asked Questions)</li></a>
+                                 <a href="RRBDB/Notice Board/CEN 01 2024 Recruitment of Assistant Loco Pilot.pdf"><li><h5 class="head-5">CEN 01/2024</h5>Recruitment of Assistant Loco Pilot</li></a>
+                           </ul>
+                     </div>
+                     <div class="readMore">
+                        <a href="Notice Board/noticeBoard.html">Read More..</a>
+                     </div>
+                  </div>
+
+                  <!-- child 2 -->
+                  <div class="results-card">
+                     <div class="card-header">
+                        <h3 style="font-size:x-large; font-weight: 600;"><img src="assets/images/clipboard.png"> Results Declared</h3>
+                     </div>
+                     
+                     <div class="card-body">
+                           <ul class="card-list">
+                              <a href=""><li>No Data Found</li></a>
+                              <!-- <a href=""><li></li></a> -->
+                           </ul>
+                     </div>
+                     <div class="readMore">
+                        <a href="Recruitments/Result/results2024.html">Read More..</a>
+                     </div>
+                  </div>
+
+               </div>
             </div>
          </div>
 
