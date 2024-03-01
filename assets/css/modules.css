@@ -28,9 +28,8 @@
 	margin-bottom: 0;
 	font-weight: 500;
  }
- 
  /* testing end*/
-
+ 
  .banner-slider {
   margin: 0;
   padding: 0;
@@ -893,7 +892,7 @@ span.list-dt{display:block;font-size:90%;color:#666;float:left;width:100%;paddin
 .list-circle ul li{ padding-left:0px; list-style-type:circle;list-style-position:outside;margin-left:20px;}
 
 /*===========Base Styles===========*/
-h1,h2,h3,h4,h5,h6{font-weight:700; margin-bottom:20px;color:#212020;}
+h1,h2,h3,h4,h5,h6{font-weight:700; margin-bottom:20px;}
 h1{font-size:180%;}
 h2{font-size:150%;}
 h3{font-size:130%;}

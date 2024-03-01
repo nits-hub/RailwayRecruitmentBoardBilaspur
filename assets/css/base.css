@@ -557,9 +557,9 @@ ul.font-controll li:first-child {
 }
 
 /* About/profile */
-#profile-header-container{
-	padding: 10px 15px 0 15px !important;
-}
+/* #profile-header-container{
+	padding: 10px 15px 15px 15px !important;
+} */
 
 /* testing about*/
 .about-container{
@@ -589,9 +589,11 @@ ul.font-controll li:first-child {
 	font-weight: 600;
 }
 
+
+
 .menu-section > a:hover {
     background-color: #002654;
-}
+} 
 
 .about-content-section{
 	width: 100%;
