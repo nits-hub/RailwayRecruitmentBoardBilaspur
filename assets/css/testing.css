@@ -1,4 +1,11 @@
 
+/* About section start*/
+#about-content > p {
+	font-size: 15px;
+}
+/* About section end*/
+
+
 /* Home > Notices > Recruitments > Selecttion Procedure */
 .syllabus-download{
     background-color: #015296;
@@ -15,6 +22,32 @@ a img{
     width: 4rem;
     height: auto;
 }
+
+#recruitment-content > ul > li {
+	margin-bottom: 10px;
+}
+
+
+#recruitment-content > p, #recruitment-content > ul > li {
+	font-size: 15px;
+}
+
+/* Do's and Don'ts */
+#recruitment-content section div ol > ul > li {
+	margin-bottom: 10px;
+} 
+
+/* Document verification Process */
+#recruitment-content section div > ul > li, #recruitment-content section div > ol > li {
+	font-size: 15px;
+}
+
+
+
+#recruitment-content section div > ul > li{
+	margin-bottom: 10px;
+}
+
 
 /* Home > Acts & Rules - .about-content*/
 #about-content{
@@ -83,19 +116,17 @@ a img{
 
 /* Do's and  Don'ts  */
 
-#list .container div ol ul{
+#list .container > ol > ul{
 	box-sizing: border-box;
-	 
 	padding: revert;
 }
 
-#list .container div ol li{
+#list .container > ol > li{
 	margin-bottom: 10px;
 }
 
 
 /* results start */
-
 .year-buttons {
     margin-bottom: 20px;
 }

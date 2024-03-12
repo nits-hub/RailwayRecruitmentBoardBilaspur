@@ -1,0 +1,13 @@
+/* index */
+    /* navbar */
+    @media only screen and (max-width: 768px) {
+       #logo img{
+            width:50%;
+       }
+
+       #logo
+
+       section div a img{
+        width: 75%;
+       }
+      } 
