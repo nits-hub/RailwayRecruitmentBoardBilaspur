@@ -1527,6 +1527,7 @@ a {
 }
 
 .logo img {
+	width:13%;
 	float: left;
 	padding: 0 15px 0 5px;
 	/* object-fit: cover; */

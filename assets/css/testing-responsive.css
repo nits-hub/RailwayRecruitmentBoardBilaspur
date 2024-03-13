@@ -1,13 +1,69 @@
-/* index */
-    /* navbar */
-    @media only screen and (max-width: 768px) {
-       #logo img{
-            width:50%;
-       }
+/* index page*/
+    @media only screen and (max-width: 431px) {
+        /* Website title section */
+        h1.logo img{
+            width:5rem !important ;
+        }
 
-       #logo
+        span.department-title span a h2{
+            font-size: 100%;
+        }
 
-       section div a img{
-        width: 75%;
-       }
-      } 
+        a.sw-logo img{
+            width:2rem;
+        }
+
+        /* blank-section below carousel */
+        #section-padding {
+            padding: 0.4rem 0 !important;
+        }
+
+
+        /* index card-section */
+        .card-container .announcements-card, .card-container .results-card{
+            width:90% !important;
+            margin: 20px auto;
+        }
+
+        .card-container > div > div > h3 {
+            font-size:large !important; 
+        }
+        
+        .card-container > div > div > h3 img{
+            width:25px !important;
+        }
+
+        .card-body .card-list > .body-font .head-5 {
+            font-size: 100% !important;
+            font-weight: 600;
+        }
+
+        .card-body .card-list > .body-font {
+            font-size: 80% !important;
+        }
+
+        .card-header{
+            padding:3px 0 !important;
+        }
+
+        .card-footer{
+            padding: 0 !important;
+        }
+
+        .card-footer > a{
+            padding: 3px 6px !important;
+            font-size: 10px !important;
+        }
+
+        ul.card-list {
+            row-gap: 3px !important;
+        }
+        
+        ul.card-list > a {
+            padding: 8px 5px !important;
+        }
+
+        .card-body{
+            height:140px !important;
+        }
+}
