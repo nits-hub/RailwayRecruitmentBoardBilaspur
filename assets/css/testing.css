@@ -53,66 +53,6 @@ a img{
 #about-content{
 	padding: revert;
 }
-/* Home > Acts & Rules  */
-
-
-/* Home > Notices > Recruitments > How  to fill applications */
-/* Table css */
-.table-container {
-	 font-family: 'lato', sans-serif;
-	 height:25rem;
-	 overflow-y: auto;
-}
- .table-container {
-	position: relative;
-	 max-width: 100%;
-	 margin-left: auto;
-	 margin-right: auto;
-	 padding-left: 10px;
-	 padding-right: 10px;
-}
- h2 {
-	 font-size: 24px;
-	 margin: 20px 0;
-	 text-align: center;
-}
- h2 small {
-	 font-size: 0.4em;
-}
- .responsive-table li {
-	 border-radius: 3px;
-	 padding: 20px 25px;
-	 display: flex;
-	 justify-content: space-between;
-	 margin-bottom: 25px;
-}
- .responsive-table .table-header {
-	 background-color: #95a5a6;
-	 font-size: 14px;
-	 text-transform: uppercase;
-	 letter-spacing: 0.03em;
-}
- .responsive-table .table-row {
-	 background-color: #fff;
-	 box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
-}
- .responsive-table .col-1 {
-	 flex-basis: 5%;
-}
- .responsive-table .col-2 {
-	 flex-basis: 10%;
-}
- .responsive-table .col-3 {
-	 flex-basis: 70%;
-}
-
-.table-container .responsive-table .table-row .table-details p{
-	margin-bottom: 5px;
-}
-
-.table-container h2, .table-container .table-header{
-	position: sticky;
-}
 
 /* Do's and  Don'ts  */
 
@@ -128,11 +68,13 @@ a img{
 
 /* results start */
 .year-buttons {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 10px;
     margin-bottom: 20px;
 }
 
 .year-buttons a {
-    margin-right: 10px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -149,20 +91,11 @@ a img{
 }
 
 .results-container {
-    /* border: 1px solid #ccc; */
     padding: 10px;
 }
 
-#r-tr-1{
-	width: fit-content;
-}
-
-#r-tr-2{
-	width: fit-content;
-}
-
-#r-tr-4{
-	width: fit-content;
+table{
+	border-collapse: collapse;
 }
 
 table tbody > tr > td{
@@ -316,11 +249,12 @@ ul.card-list > a:hover{
 /* contact start */
 .contact-container{
 	width: 100%;
-	padding: 30px 30px;
+	box-sizing: border-box;
+	/* padding: 30px 30px; */
 }
 
 .contact-card{
-	width: 85%;
+	width: 90%;
 	display:flex;
 	margin: 10px auto;
 	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -337,7 +271,7 @@ ul.card-list > a:hover{
 }
 
 .information{
-	width: 40%;
+	width: 35%;
 	padding:20px;
 	background-color: #015296;
 	color:white !important;
@@ -380,7 +314,7 @@ ul.card-list > a:hover{
 	margin:0 auto;
 	display: flex;
 	flex-flow: row wrap;
-	column-gap: 1em;
+	gap: 1.2rem;
 	
 }
 

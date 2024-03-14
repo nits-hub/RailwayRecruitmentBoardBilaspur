@@ -43,22 +43,23 @@
                <div class="wrapper common-wrapper">
                   <div class="container common-container four_content top-header">
                      <div class="common-left clearfix">
-                        <ul>
+
+                        <ul class="web-top-header-container">
                            <li class="gov-india"><span class="responsive_go_hindi" lang="hi"><a target="_blank" href="https://india.gov.in/hi" title="भारत सरकार ( बाहरी वेबसाइट जो एक नई विंडो में खुलती है)" role="link">भारत सरकार</a></span><span class="li_eng responsive_go_eng"><a target="_blank" href="https://india.gov.in/" title="Government of india,External Link that opens in a new window" role="link">Government of india</a></span></li>
                            <li class="ministry">
                               <a href="#" target="_blank" alt="Ministry Name" title="मंत्रालय / विभाग नाम"><span class="responsive_minis_hi" lang="hi">रेल मंत्रालय</span></a>
                               <a href="#" target="_blank" alt="Ministry Name" title="Ministry / Department Name"><span class="li_eng responsive_minis_eng">Ministry of Railways</span></a>
                            </li>
                         </ul>
+
                      </div>
+
                      <div class="common-right clearfix">
                         <ul id="header-nav">
                            <li class="ico-skip cf"><a href="#skipCont" title="">Skip to main content</a>
                            </li>
-                           <li class="ico-site-search cf">
-                              <a href="javascript:void(0);" id="toggleSearch" title="Site Search">
-                              <img class="top" src="../assets/images/ico-site-search.png" alt="Site Search" /></a>
-                              <div class="search-drop both-search">
+                           <!-- <li class="ico-site-search cf"><a href="javascript:void(0);" id="toggleSearch" title="Site Search"><img class="top" src="assets/images/ico-site-search.png" alt="Site Search" /></a> -->
+                              <!-- <div class="search-drop both-search">
                                  <div class="google-find">
                                     <form method="get" action="http://www.google.com/search" target="_blank">
                                        <label for="search_key_g" class="notdisplay">Search</label>
@@ -79,22 +80,23 @@
                                     </form>
                                     <div id="auto_suggesion"></div>
                                  </div>
-                              </div>
+                              </div> -->
                            </li>
-                           <li class="ico-accessibility cf">
+
+                           <!-- font size increase / decrease-->
+                           <li class="ico-accessibility cf"> 
                               <a href="javascript:void(0);" id="toggleAccessibility" title="Accessibility Dropdown" role="link">
                               <img class="top" src="../assets/images/ico-accessibility.png" alt="Accessibility Dropdown" />
                               </a>
-                              <ul>
-                                 <li> <a onClick="set_font_size(&#39;increase&#39;)" title="Increase font size" href="javascript:void(0);" role="link">A<sup>+</sup>
-                                    </a> 
-                                 </li>
+                              <ul>  
+                                 <li> <a onClick="set_font_size(&#39;increase&#39;)" title="Increase font size" href="javascript:void(0);" role="link">A<sup>+</sup></a> </li>
                                  <li> <a onClick="set_font_size()" title="Reset font size" href="javascript:void(0);" role="link">A<sup>&nbsp;</sup></a> </li>
                                  <li> <a onClick="set_font_size(&#39;decrease&#39;)" title="Decrease font size" href="javascript:void(0);" role="link">A<sup>-</sup></a> </li>
                                  <li> <a href="javascript:void(0);" class="high-contrast dark" title="High Contrast" role="link">A</a> </li>
                                  <li> <a href="javascript:void(0);" class="high-contrast light" title="Normal Contrast" style="display: none;" role="link">A</a> </li>
                               </ul>
                            </li>
+
                            <li class="ico-social cf">
                               <a href="javascript:void(0);" id="toggleSocial" title="Social Medias">
                               <img class="top" src="../assets/images/ico-social.png" alt="Social Medias" /></a>
@@ -109,7 +111,7 @@
                            </li>
                            <li class="hindi cmf_lan d-hide">
                               <label class="de-lag"><span style="display: none;">Language</span>
-                                 <select title="Select Language">
+                                 <select class="head-lang" title="Select Language">
                                     <option>English</option>
                                     <option>हिन्दी</option>
                                  </select>
@@ -279,7 +281,7 @@
       <section class="wrapper carousel-wrapper">
          <div class="container common-container four_content carousel-container">
             <div id="flexCarousel" class="flexslider carousel">
-               <ul class="slides">
+               <ul class="slides slidesTwo">
                   <li><a target="_blank" href="http://digitalindia.gov.in/" title="Digital India, External Link that opens in a new window"><img src="../assets/images/carousel/digital-india.png" alt="Digital India"></a></li>
                   <li><a target="_blank" href="http://www.makeinindia.com/" title="Make In India, External Link that opens in a new window"> <img src="../assets/images/carousel/makeinindia.png" alt="Make In India"></a></li>
                   <li><a target="_blank" href="http://india.gov.in/" title="National Portal of India, External Link that opens in a new window"><img src="../assets/images/carousel/india-gov.png" alt="National Portal of India"></a></li>
