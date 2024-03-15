@@ -1,8 +1,22 @@
+/* first slide  */
+
+.firstslide div{
+	position: absolute;
+	color:white;
+	font-size: x-large;
+	z-index: 10;
+}
+
+/* Index language-en */
+.language-en a{
+	border: 1px solid black;
+}
 
 /* About section start*/
 #about-content > p {
 	font-size: 15px;
 }
+
 /* About section end*/
 
 

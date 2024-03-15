@@ -8,9 +8,9 @@
       <meta name="keywords" content="ministry, department">
       <meta name="description" content="Ministry/Department">
       <meta name="author" content="National Informatics Center">
-      <link rel="apple-touch-icon" href="../assets/images/favicon/apple-touch-icon.png" src="/">
+      <link rel="apple-touch-icon" href="../assets/images/favicon/apple-touch-icon.png">
       <link rel="icon" href="../assets/images/favicon/favicon.ico">
-      <title>Ministry | Department | GoI</title>
+      <title>Home | Ministry | Department | GoI</title>
       <!-- Custom styles for this template -->
       <link href="../assets/css/testing-responsive.css" rel="stylesheet" media="all">
       <link href="../assets/css/testing.css" rel="stylesheet" media="all">
@@ -20,22 +20,27 @@
       <link href="../assets/css/font.css" rel="stylesheet" media="all">
       <link href="../assets/css/font-awesome.min.css" rel="stylesheet" media="all">
       <link href="../assets/css/flexslider.css" rel="stylesheet" media="all">
+      <link href="../assets/css/megamenu.css" rel="stylesheet" media="all" />
       <link href="../assets/css/print.css" rel="stylesheet" media="print" />
-      <link href="../assets/css/modules.css" rel="stylesheet" media="all">
-      <!-- Theme styles for this template -->
+      <!-- ../Theme styles for this template -->
       <link href="../assets/css/megamenu.css" rel="stylesheet" media="all" />
       <link href="../theme/css/site.css" rel="stylesheet" media="all">
       <link href="../theme/css/site-responsive.css" rel="stylesheet" media="all">
       <link href="../theme/css/ma5gallery.css" rel="stylesheet" type="text/css">
+      <link href="../theme/css/print.css" rel="stylesheet" type="text/css" media="print">
+      <!-- <link href="../theme/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
       <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
-      <script srassets/js/html5shiv.js"></script>
-      <script srassets/js/respond.min.js"></script>
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond.min.js"></script>
       <![endif]-->
+      <!-- Custom JS for this template -->
+      <noscript>
+         <link href="../theme/css/no-js.css" type="text/css" rel="stylesheet">
+      </noscript>
    </head>
    <body>
-         <div id="fb-root"></div>
-
+      <div id="fb-root"></div>
       <header>
          <div class="region region-header-top">
             <div id="block-cmf-content-header-region-block" class="block block-cmf-content first last odd">
@@ -57,32 +62,7 @@
 
                      <div class="common-right clearfix">
                         <ul id="header-nav">
-                           <li class="ico-skip cf"><a href="#skipCont" title="">Skip to main content</a>
-                           </li>
-                           <!-- <li class="ico-site-search cf"><a href="javascript:void(0);" id="toggleSearch" title="Site Search"><img class="top" src="assets/images/ico-site-search.png" alt="Site Search" /></a> -->
-                              <!-- <div class="search-drop both-search">
-                                 <div class="google-find">
-                                    <form method="get" action="http://www.google.com/search" target="_blank">
-                                       <label for="search_key_g" class="notdisplay">Search</label>
-                                       <input type="text" name="q" value="" id="search_key_g"/> 
-                                       <input type="submit" value="Search" class="submit" /> 
-                                       <div>
-                                          <input type="radio" name="sitesearch" value="" id="the_web"/> 
-                                          <label for="the_web">The Web</label> 
-                                          <input type="radio" name="sitesearch" value="india.gov.in" checked id="the_domain"/> <label for="the_domain"> INDIA.GOV.IN</label>
-                                       </div>
-                                    </form>
-                                 </div>
-                                 <div class="find">
-                                    <form name="searchForm" action="">
-                                       <label for="search_key" class="notdisplay">Search</label>
-                                       <input type="text" name="search_key" id="search_key" onKeyUp="autoComplete()" autocomplete="off" required />
-                                       <input type="submit" value="Search" class="bttn-search"/>
-                                    </form>
-                                    <div id="auto_suggesion"></div>
-                                 </div>
-                              </div> -->
-                           </li>
+                           <li class="ico-skip cf"><a href="#skipCont" title="">Skip to main content</a></li>
 
                            <!-- font size increase / decrease-->
                            <li class="ico-accessibility cf"> 
@@ -119,7 +99,7 @@
                               </label>
                            </li> -->
                            <li class="language-en">
-                              <a href="../hindiVersion/Hindi-Quick Links/importantLinks.html">हिंदी</a>
+                              <a href="../index.html">Eng</a>
                            </li>
                            <li class="hindi cmf_lan m-hide">
                               <a href="javascript:;" title="Select Language">Language</a> 
@@ -135,6 +115,7 @@
             <p id="scroll" style="display: none;"><span></span></p>
          </div>
          <!--Top-Header Section end-->
+
          <section class="wrapper header-wrapper">
             <div class="container common-container four_content header-container" id="profile-header-container">
                <h1 class="logo">                 
@@ -159,69 +140,71 @@
                </div>
             </div>
          </section>
+
+
          <!--/.header-wrapper-->
          <section class="wrapper megamenu-wraper">
             <h2 style="display: none;">Megamenu</h2>
             <div class="container common-container four_content header-nav">
-               <p class="showhide" id="showhide"><em></em><em></em><em></em></p>
+               <p class="showhide" id="showhide"><em></em><em></em><em></em></p>      
                <nav class="main-menu clearfix main-menu1" id="main_menu">
                   <ul class="nav-menu">
-                     <li> <a href="../index.html" class="home"><span>Home</span><i class="fa fa-home"></i></a> </li>
-                     
-                     <li><a href="../About/about.html">About Us</a></li>
+                     <li> <a href="Hindi-index.html" class="home"><span>होम</span><i class="fa fa-home"></i></a> </li>
+                     <li>
+                        <a href="Hindi-About/about.html">हमारे बारे में</a>
+                     </li>
 
-                     <li><a href="../Notice Board/noticeBoard.html">Notice Board</a></li>
+                     <li><a href="Hindi-Notice Board/noticeBoard.html">नोटिस बोर्ड</a></li>
 
-                     <li><a href="">Recruitments</a>
+                     <li><a href="">भर्तियाँ</a>
                         <div class="sub-nav col-1">
                            <ul class="sub-nav-group">
-                              <li><a href="../Notice Board/noticeBoard.html">Employment Notifications</a></li>
-                              <li><a href="../Recruitments/Recruitments Process/recruitments.html">Recruitments process</a></li>
-                              <li><a href="../Recruitments/Result/results2024.html">Results</a></li>
+                              <li><a href="Hindi-Notice Board/noticeBoard.html">रोजगार अधिसूचनाएँ</a></li>
+                              <li><a href="Hindi-Recruitments/Recruitments Process/recruitments.html">भर्ती प्रक्रिया</a></li>
+                              <li><a href="Hindi-Recruitments/Result/results2024.html">परिणाम</a></li>
                            </ul>
                         </div>
                      </li>
 
-                     <li><a href="#">Acts & Rules</a>
-                        <div class="sub-nav col-1">
-                             <ul class="sub-nav-group ">
-                                <li><a href="../Acts & Rules/RTI.html">Right to Information Act</a></li>
-                                <li><a href="#">Other Act And Rules</a></li>                         
-                             </ul>
-                          </div>
-                       </li>
-
-                       <li><a href="../Tenders/tender.html">Tenders</a></li>  
- 
-                     
-                     <li>
-                        <a href="../inner.html">Forms Download</a>
-                        <div class="sub-nav col-1">
-                           <ul class="sub-nav-group">
-                              <li><a href="../RRBDB/forms download/SC-ST certificate.pdf">SC / ST</a></li>
-                              <li><a href="../RRBDB/forms download/obc certificate.pdf">OBC</a></li>
-                              <li><a href="../RRBDB/forms download/obc declaration.pdf">OBC - Declaration</a></li>
-                              <li><a href="../RRBDB/forms download/income certificate for EBC.pdf">Income Certificate - EBC</a></li>
-                              <li><a href="../RRBDB/forms download/income-asset certificate for EWS.pdf">Income and Assset Certificate - EWS</a></li>
-                              <li><a href="../RRBDB/forms download/minority declaration.pdf">Minority Declaration</a></li>
-                              <li><a href="../RRBDB/forms download/disability certificate.pdf">PWBD Certificate</a></li>
-                              <li><a href="../RRBDB/forms download/vision certificate.pdf">Vision Certificate</a></li>
+                     <li><a href="#">अधिनियम एवं नियम</a> 
+                      <div class="sub-nav col-1">
+                           <ul class="sub-nav-group ">
+                              <li><a href="Hindi-Acts & Rules/RTI.html">सूचना का अधिकार</a></li>
+                              <li><a href="#">अन्य अधिनियम एवं नियम</a></li>                         
                            </ul>
                         </div>
                      </li>
-                     
+
+                     <li><a href="Hindi-Tenders/tender.html">निविदाएं</a></li>
+
                      <li>
-                        <a href="#">Quick Links</a>
+                        <a href="">फॉर्म डाउनलोड करें</a>
                         <div class="sub-nav col-1">
                            <ul class="sub-nav-group">
-                              <li><a href="otherRRBs.html">Other RRB's</a></li>
-                              <li><a href="https://www.rrcb.gov.in/" target="_blank">RRCB, New Delhi</a></li>
-                              <li><a href="importantLinks.html">Important Links</a></li>                           </ul>
+                              <li><a href="../RRBDB/forms download/SC-ST certificate.pdf">एससी / एसटी</a></li>
+                              <li><a href="../RRBDB/forms download/obc certificate.pdf">ओबीसी</a></li>
+                              <li><a href="../RRBDB/forms download/obc declaration.pdf">ओबीसी - घोषणा</a></li>
+                              <li><a href="../RRBDB/forms download/income certificate for EBC.pdf">आय प्रमाण पत्र - ईबीसी</a></li>
+                              <li><a href="../RRBDB/forms download/income-asset certificate for EWS.pdf">आय और संपत्ति प्रमाण पत्र - ईडब्ल्यूएस</a></li>
+                              <li><a href="../RRBDB/forms download/minority declaration.pdf">अल्पसंख्यक घोषणा</a></li>
+                              <li><a href="../RRBDB/forms download/disability certificate.pdf">पीडब्ल्यूबीडी प्रमाण पत्र</a></li>
+                              <li><a href="../RRBDB/forms download/vision certificate.pdf">दृष्टि प्रमाण पत्र</a></li>
+                           </ul>
+                        </div>
+                     </li>  
+                     
+                     <li>
+                        <a href="">त्वरित लिंक</a>
+                        <div class="sub-nav col-1">
+                           <ul class="sub-nav-group">
+                              <li><a href="Hindi-Quick Links/otherRRBs.html">अन्य आरआरबी</a></li>
+                              <li><a href="https://www.rrcb.gov.in/" target="_blank">आरआरसीबी, नई दिल्ली</a></li>
+                              <li><a href="Hindi-Quick Links/importantLinks.html">महत्वपूर्ण लिंक</a></li>
+                           </ul>
                         </div>
                      </li>
 
-
-                     <li><a href="../Contact Us/contactus.html">Contact Us</a></li>
+                     <li><a href="Hindi-Contact Us/contactus.html">संपर्क करें</a></li>
                      
                   </ul>
                </nav>
@@ -233,105 +216,77 @@
          </section>
       </header>
       <!--/.nav-wrapper-->
+      
+      <!-- carousel start -->
       <section class="wrapper banner-wrapper">
          <div id="flexSlider" class="flexslider">
-            <div class="inner-banner"><img src="../assets/images/rrbs-gif.gif" alt="Inner Banner of Consumer Affairs" title="banner"></div>
+            <ul class="slides">
+               <!-- <li><img src="../theme/images/banner/slider-1.jpg" alt="Banner Image 2" title="Banner 2"></li> -->
+               <li> <img src="../assets/images/carousel/rrb bilaspur.jpeg" alt="Banner Image 5" title="Bilaspur Railway Jn."></li>
+            </ul>
          </div>
       </section>
       <div class="wrapper" id="skipCont"></div>
+      <!-- carousel end -->
+
+      <section class="wrapper megamenu-wraper" id="section-padding"><!-- No contents to be filled inside --></section>
       <!--/#skipCont-->
+
       <section id="fontSize" class="wrapper body-wrapper ">
-      <div class="bg-wrapper inner-wrapper">
-      <div class="breadcam-bg breadcam">
-         <div class="container common-container four_content">
-            <ul>
-               <li><a href="../index.html">Home </a></li>
-               <li class="current" id="current-btn">Important Links</li>
-            </ul>
+         <!-- section 2 start -->
+         <div class="wrapper home-banner">
+            <div class="container common-container four_content banner-container">
+               
+               <div class="card-container">
+                  <!-- child 1 -->
+                  <div class="announcements-card">
+                     <div class="card-header">
+                        <h3><img src="../assets/images/announcement.png">अधिसूचना</h3>
+                     </div>
+
+                     <div class="card-body scroller">
+                           <ul class="card-list">
+                                 <a class="body-font" href="../RRBDB/Notice Board/RRB Tentative Calendar1 17.01.2024.pdf"><li><h5 class="head-5">सीईएन 01/2024</h5>आरआरबी भर्ती के लिए वार्षिक कैलेंडर</li></a>
+                                 <a class="body-font" href="../RRBDB/Notice Board/Corrigendum CEN 01-2024 dt 29012024.pdf"><li><h5 class="head-5">सीईएन 01/2024</h5>एएलपी की भर्ती के लिए संभावित समयसीमा</li></a>
+                                 <a class="body-font" href="../RRBDB/Notice Board/Corrigendum CEN 01-2024 dt 29012024.pdf"><li><h5 class="head-5">सीईएन 01/2024</h5>सहायक लोको पायलट की भर्ती - (पैरा 5.0 और 5.2 के लिए शुद्धिपत्र)</li></a>
+                                 <a class="body-font" href="../RRBDB/Notice Board/FAQ CEN 01_2024 _ 23.01.2024.pdf"><li><h5 class="head-5">सीईएन 01/2024</h5>एफएक्यू (अक्सर पूछे जाने वाले प्रश्न)</li></a>
+                                 <a class="body-font" href="../RRBDB/Notice Board/CEN 01 2024 Recruitment of Assistant Loco Pilot.pdf"><li><h5 class="head-5">सीईएन 01/2024</h5>सहायक लोको पायलट की भर्ती</li></a>
+                           </ul>
+                     </div>
+                     <div class="card-footer">
+                        <a href="Hindi-Notice Board/noticeBoard.html">और पढ़ें..</a>
+                     </div>
+                  </div>
+
+                  <!-- child 2 -->
+                  <div class="results-card">
+                     <div class="card-header">
+                        <h3 style="font-size:x-large; font-weight: 600;"><img src="../assets/images/clipboard.png">परिणाम घोषित</h3>
+                     </div>
+                     
+                     <div class="card-body scroller">
+                           <ul class="card-list">
+                              <a href=""><li>डाटा प्राप्त नहीं हुआ</li></a>
+                              <!-- <a href=""><li></li></a> -->
+                           </ul>
+                     </div>
+                     <div class="card-footer">
+                        <a href="Hindi-Recruitments/Result/results2024.html">और पढ़ें..</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
          </div>
-      </div>
 
-        <section class="wrapper container about-container common-container four_content">
-         
-            <!-- child2 -->
-            <section class="about-content-section">
-                <section id="page-head" class="wrapper headings-wrapper">
-                    <div class="container common-container four_content">
-                        
-                                <!-- Results will be displayed here --> 
-                                <section id="tables" class="wrapper tables-wrapper">
-                                 <div class="container common-container four_content">
-                                 <div class="scroller">
-                                     <table cellspacing="0" cellpadding="0">
-                                         <tbody>
-                                          <caption><h1>Important Links</h1></caption>
-                                             <tr>
-                                                <th  align="left" valign="middle">Website Name</th>
-                                                <th  align="left" valign="middle">Visit Link</th>
-                                             </tr>
-
-                                             <tr>
-                                                <td align="left" valign="middle">National Career Service(NCS)</td>
-                                                <td align="left" valign="middle"><a href="https://www.ncs.gov.in/Pages/default.aspx">https://www.ncs.gov.in/Pages/default.aspx</a></td>
-                                             </tr>
-                                             
-                                             <tr>
-                                                <td align="left" valign="middle">Employment News</td>
-                                                <td align="left" valign="middle"><a href="https://employmentnews.gov.in/NewEmp/Home.aspx">https://employmentnews.gov.in/NewEmp/Home.aspx</a></td>
-                                             </tr>
-
-                                             <tr>
-                                                <td align="left" valign="middle">Indian Ralways</td>
-                                                <td align="left" valign="middle"><a href="https://indianrailways.gov.in/">https://indianrailways.gov.in/</a></td>
-                                             </tr>
-
-                                             
-
-                                             <tr>
-                                                <td align="left" valign="middle">RDSO</td>
-                                                <td align="left" valign="middle"><a href="https://rdso.indianrailways.gov.in/">https://rdso.indianrailways.gov.in/</a></td>
-                                             </tr>
-
-                                             <tr>
-                                                <td align="left" valign="middle">RRCB</td>
-                                                <td align="left" valign="middle"><a href="https://www.rrcb.gov.in/">https://www.rrcb.gov.in/</a></td>
-                                             </tr>
-
-                                             <tr>
-                                                <td align="left" valign="middle">East Coast Railway</td>
-                                                <td align="left" valign="middle"><a href="https://eastcoastrail.indianrailways.gov.in/">https://eastcoastrail.indianrailways.gov.in/</a></td>
-                                             </tr>
-
-                                             <tr>
-                                                <td align="left" valign="middle">Government of India</td>
-                                                <td align="left" valign="middle"><a href="https://www.india.gov.in/%22%3E">https://www.india.gov.in/%22%3E</a></td>
-                                             </tr>
-
-                                             <tr>
-                                                <td align="left" valign="middle">Right To Information</td>
-                                                <td align="left" valign="middle"><a href="https://rti.gov.in/">https://rti.gov.in/</a></td>
-                                             </tr>
-
-                                             <!-- <tr>
-                                                <td align="left" valign="middle"></td>
-                                                <td align="left" valign="middle"><a href=""></a></td>
-                                             </tr> -->
-
-                                         </tbody>
-                                     </table>
-                                 </div>
-                                 </div>
-                             </section>
-                        <hr/>
-                    </div>
-                </section>
-            </section>
+         <!-- section 4 -->
+        
       </section>
-      <!--/#paragraph-->
-
-      
       <!--/.body-wrapper-->
+
+      <!--/.banner-wrapper-->
       <section class="wrapper carousel-wrapper">
+         <h2 style="display: none;">Carousel</h2>
          <div class="container common-container four_content carousel-container">
             <div id="flexCarousel" class="flexslider carousel">
                <ul class="slides slidesTwo">
@@ -346,14 +301,14 @@
          </div>
       </section>
       <!--/.carousel-wrapper-->
-
+      
       <footer class="wrapper footer-wrapper">
          <div class="footer-top-wrapper">
             <div class="container common-container four_content footer-top-container">
                <ul>
-                  <li><a href="../FooterPages/websitePolicies.html">Website Policies</a></li>
-                  <li><a href="../Contact Us/contactus.html">Contact Us</a></li>
-                  <li><a href="../FooterPages/help.html">Help</a></li>
+                  <li><a href="Hindi-FooterPages/websitePolicies.html">वेबसाइट नीतियां</a></li>
+                  <li><a href="Hindi-Contact Us/contactus.html">हमसे संपर्क करें</a></li>
+                  <li><a href="Hindi-FooterPages/help.html">सहायता</a></li>
                </ul>
             </div>
          </div>
@@ -361,18 +316,17 @@
             <div class="container common-container four_content footer-bottom-container">
                <div class="footer-content clearfix">
                   <div class="copyright-content"> 
-                     Website Content Managed by <strong><a href="https://www.nic.in/">National Informatics Centre</a>, <a href="https://www.meity.gov.in/">Ministry of Electronics and Information Technology</a>, <a target="_blank" title="GoI, External Link that opens in a new window" href="https://www.india.gov.in/"><strong>Government of India</strong></a></strong> 
-                     <span>Designed, Developed and Hosted by ©<a target="_blank" title="NIC, External Link that opens in a new window" href="https://www.nic.in/"><strong>National Informatics Centre</strong></a><strong> (NIC) Bilaspur, (C.G.)</strong></span>
-                     <span class="last-updated">Last Updated: <span id="lastupdated"></span></span>
+                     <strong><a href="https://www.nic.in/">राष्ट्रीय सूचना विज्ञान केंद्र</a>, <a href="https://www.meity.gov.in/">इलेक्ट्रॉनिक्स और सूचना प्रौद्योगिकी मंत्रालय</a>, <a target="_blank" title="GoI, External Link that opens in a new window" href="https://www.india.gov.in/"><strong>भारत सरकार</strong></a></strong> 
+                     <span>डिज़ाइन, विकसित और होस्ट ©<a target="_blank" title="NIC, External Link that opens in a new window" href="https://www.nic.in/"><strong>राष्ट्रीय सूचना विज्ञान केंद्र</strong></a><strong> (एनआईसी) बिलासपुर, (छ.ग.)</strong> द्वारा किया गया</span>
+                     <span class="last-updated">आखरी अपडेट: <span id="lastupdated"></span></span>
                   </div>
 
-                  <div class="logo-cmf"> <a target="_blank" title="External link that opens in new tab, cmf" href="http://cmf.gov.in/"><img alt="cmf logo" src="assets/images/cmf-logo.png"></a> </div>
+                  <div class="logo-cmf"> <a target="_blank" title="External link that opens in new tab, cmf" href="http://cmf.gov.in/"><img alt="cmf logo" src="../assets/images/cmf-logo.png"></a> </div>
                </div>
             </div>
          </div>
       </footer>
       <!--/.footer-wrapper-->
-
       <!-- jQuery v1.11.1 -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha512-nhY06wKras39lb9lRO76J4397CH1XpRSLfLJSftTeo3+q2vP7PaebILH9TqH+GRpnOhfAGjuYMVmVTOZJ+682w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <!-- jQuery Migration v1.4.1 -->
@@ -391,11 +345,18 @@
       <script src="../assets/js/megamenu.js"></script>
       <script src="../theme/js/easyResponsiveTabs.js"></script>
       <script src="../theme/js/custom.js"></script>
+     <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 
       <script>
          var d = new Date();
          var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
          document.getElementById("lastupdated").innerHTML = months[d.getMonth()]+" "+ d.getDate()+", "+d.getFullYear();
+      </script>
+      
+      <script>
+         $(document).ready(function() {
+
+         });
       </script>
    </body>
 </html>
