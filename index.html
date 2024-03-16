@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="format-detection" content="telephone=no" />
       <meta name="keywords" content="ministry, department">
       <meta name="description" content="Ministry/Department">
@@ -305,11 +305,49 @@
                </div>
             </div>
          </div>
-
-         <!-- section 4 -->
-        
       </section>
-      <!--/.body-wrapper-->
+
+      <section>
+         <div class="wrapper banner-wrapper">
+            <div class="container common-container four_content banner-container">
+               <div class="visitor-wrapper">
+                  
+                  <div class="vis-dash">
+                     <div class="box-1 box">
+                        <h2>This Month</h2>
+                        <div id="thisMonthsVisitCount">#003</div>
+                     </div>
+                     <div class="box-2 box">
+                        <h2>This Week</h2>
+                        <div id="thisWeeksVisitCount">#002</div>
+                     </div>
+                     <div class="box-3 box">
+                        <h2>Today</h2>
+                        <div id="todaysVisitCount">#001</div>
+                        <script src="assets/js/visitCounter.js">
+                           document.getElementById("todaysVisitCount").innerText = getTodaysVisitCount();
+                        </script>
+                     </div>
+                     <div class="box-4 box">
+                        <h2>Lifetime's Hit</h2>
+                        <div id="lifetimeTotalVisitCount">#004</div>
+                     </div>
+                  </div>
+
+                  <!-- <div class="vis-img">
+                     <img src="assets/images/vande-bharat train.jpg" alt="">
+                  </div> -->
+               </div>   
+               <script src="assets/js/visitCounter.js">
+                  // This script will populate the visit counts in the HTML elements with the corresponding IDs
+                  // document.getElementById("todaysVisitCount").innerText = getTodaysVisitCount();
+                  document.getElementById("thisWeeksVisitCount").innerText = getThisWeeksVisitCount();
+                  document.getElementById("thisMonthsVisitCount").innerText = getThisMonthsVisitCount();
+                  document.getElementById("lifetimeTotalVisitCount").innerText = getLifetimeTotalVisitCount();
+                </script>   
+            </div>
+         </div>
+      </section>
 
       <!--/.banner-wrapper-->
       <section class="wrapper carousel-wrapper">
