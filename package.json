@@ -1,0 +1,15 @@
+{
+  "name": "railwayrecruitmentboardbilaspur",
+  "version": "1.0.0",
+  "description": "<h3>View - <h4><a href=\"https://niteshratre.github.io/RailwayRecruitmentBoardBilaspur/\" target=\"_blank\">Live Demo here</a></h4></h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

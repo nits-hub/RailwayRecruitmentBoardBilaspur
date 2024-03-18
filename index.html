@@ -38,6 +38,45 @@
       <noscript>
          <link href="theme/css/no-js.css" type="text/css" rel="stylesheet">
       </noscript>
+
+      <!-- visit counter -->
+      <!-- <script>
+         // Function to check if the user has visited before
+         function checkVisited() {
+             if (localStorage.getItem('visited')) {
+                 return true; // User has visited before
+             } else {
+                 localStorage.setItem('visited', 'true');
+                 return false; // First-time visitor
+             }
+         }
+     
+         // Function to increment visit count
+         function incrementVisitCount() {
+             if (!localStorage.getItem('visitCount')) {
+                 localStorage.setItem('visitCount', '1');
+             } else {
+                 let visitCount = parseInt(localStorage.getItem('visitCount'));
+                 visitCount++;
+                 localStorage.setItem('visitCount', visitCount.toString());
+             }
+         }
+     
+         // Function to display visit count
+         function displayVisitCount() {
+             let visitCount = localStorage.getItem('visitCount') || '0';
+             document.getElementById('visitCount').innerText = visitCount;
+         }
+     
+         // Function to handle page load
+         window.onload = function() {
+             if (!checkVisited()) {
+                 incrementVisitCount();
+             }
+             displayVisitCount();
+         };
+     </script> -->
+     
    </head>
    <body>
       <div id="fb-root"></div>
@@ -308,43 +347,33 @@
       </section>
 
       <section>
-         <div class="wrapper banner-wrapper">
+         <div class="wrapper body-wrapper">
             <div class="container common-container four_content banner-container">
                <div class="visitor-wrapper">
-                  
+                  <h2 id="visitor-head" style="text-align: center;">This page was viewed: </h2>
                   <div class="vis-dash">
-                     <div class="box-1 box">
-                        <h2>This Month</h2>
-                        <div id="thisMonthsVisitCount">#003</div>
-                     </div>
-                     <div class="box-2 box">
-                        <h2>This Week</h2>
-                        <div id="thisWeeksVisitCount">#002</div>
-                     </div>
-                     <div class="box-3 box">
-                        <h2>Today</h2>
-                        <div id="todaysVisitCount">#001</div>
-                        <script src="assets/js/visitCounter.js">
-                           document.getElementById("todaysVisitCount").innerText = getTodaysVisitCount();
-                        </script>
-                     </div>
-                     <div class="box-4 box">
-                        <h2>Lifetime's Hit</h2>
-                        <div id="lifetimeTotalVisitCount">#004</div>
-                     </div>
-                  </div>
 
-                  <!-- <div class="vis-img">
-                     <img src="assets/images/vande-bharat train.jpg" alt="">
-                  </div> -->
-               </div>   
-               <script src="assets/js/visitCounter.js">
-                  // This script will populate the visit counts in the HTML elements with the corresponding IDs
-                  // document.getElementById("todaysVisitCount").innerText = getTodaysVisitCount();
-                  document.getElementById("thisWeeksVisitCount").innerText = getThisWeeksVisitCount();
-                  document.getElementById("thisMonthsVisitCount").innerText = getThisMonthsVisitCount();
-                  document.getElementById("lifetimeTotalVisitCount").innerText = getLifetimeTotalVisitCount();
-                </script>   
+                     <div class="box-1 box">
+                        <h2 id="box-header">This Year</h2>
+                        <div id="thisYearsVisitCount">#000</div> <!--resets at the end of every Year while maintaining uniqueness -->
+                        <h2 id="box-footer">times</h2>
+                     </div>
+
+                     <div class="box-2 box">
+                        <h2 id="box-header">Today</h2>  
+                        <div id="todaysVisitCount">#000</div> <!--resets on every 24 hours-->
+                        <h2 id="box-footer">times</h2>
+                     </div>
+
+                     <div class="box-3 box">
+                        <h2 id="box-3-header">By Unique Candidates</h2>
+                        <div id="candidatesVisitCount">#000</div> <!--unique customers visited-->
+                        <h2 id="box-3-footer">times</h2>
+                     </div>
+                    
+                  </div>
+              </div>
+                
             </div>
          </div>
       </section>
@@ -423,5 +452,43 @@
 
          });
       </script>
+
+      <!-- visit count start -->
+      <script>
+         // Function to update visit counts
+         function updateVisitCounts() {
+             // Update this year's visit count
+             let thisYearCount = parseInt(localStorage.getItem('thisYearCount')) || 0;
+             thisYearCount++;
+             localStorage.setItem('thisYearCount', thisYearCount);
+             document.getElementById('thisYearsVisitCount').textContent = thisYearCount.toString().padStart(3, '0');
+ 
+             // Update today's visit count
+             let today = new Date().toLocaleDateString();
+             let todayCount = parseInt(localStorage.getItem('todayCount')) || 0;
+             let lastVisitDate = localStorage.getItem('lastVisitDate');
+             if (lastVisitDate !== today) {
+                 todayCount = 0;
+                 localStorage.setItem('lastVisitDate', today);
+             }
+             todayCount++;
+             localStorage.setItem('todayCount', todayCount);
+             document.getElementById('todaysVisitCount').textContent = todayCount.toString().padStart(3, '0');
+ 
+             // Update unique candidates visit count
+             let uniqueCandidatesCount = parseInt(localStorage.getItem('uniqueCandidatesCount')) || 0;
+             if (!localStorage.getItem('visited')) {
+                 uniqueCandidatesCount++;
+                 localStorage.setItem('visited', true);
+                 localStorage.setItem('uniqueCandidatesCount', uniqueCandidatesCount);
+             }
+             document.getElementById('candidatesVisitCount').textContent = uniqueCandidatesCount.toString().padStart(3, '0');
+         }
+ 
+         // Update visit counts when the page loads
+         window.onload = updateVisitCounts;
+     </script>
+      <!-- visit count end -->
+      
    </body>
 </html>
