@@ -492,52 +492,53 @@
 
       <script>
          function updateVisitCounts() {
-         // Update this year's visit count
-         let thisYearCount = parseInt(localStorage.getItem('thisYearCount')) || 0;
-         thisYearCount++;
-         localStorage.setItem('thisYearCount', thisYearCount);
-         document.getElementById('thisYearsVisitCount').textContent = thisYearCount.toString().padStart(3, '0');
+             // Update this year's visit count
+             let thisYearCount = parseInt(localStorage.getItem('thisYearCount')) || 0;
+             thisYearCount++;
+             localStorage.setItem('thisYearCount', thisYearCount);
+             document.getElementById('thisYearsVisitCount').textContent = thisYearCount.toString().padStart(3, '0');
      
-         // Update today's visit count
-         let today = new Date().toLocaleDateString();
-         let todayCount = parseInt(localStorage.getItem('todayCount')) || 0;
-         let lastVisitDate = localStorage.getItem('lastVisitDate');
-         if (lastVisitDate !== today) {
-             todayCount = 0;
-             localStorage.setItem('lastVisitDate', today);
-         }
-         todayCount++;
-         localStorage.setItem('todayCount', todayCount);
-         document.getElementById('todaysVisitCount').textContent = todayCount.toString().padStart(3, '0');
-     
-         // Update unique candidates visit count using cookies
-         let uniqueCandidatesCount = parseInt(getCookie('uniqueCandidatesCount')) || 0;
-         if (!getCookie('visited')) {
-             uniqueCandidatesCount++;
-             setCookie('visited', true);
-             setCookie('uniqueCandidatesCount', uniqueCandidatesCount);
-         }
-         document.getElementById('candidatesVisitCount').textContent = uniqueCandidatesCount.toString().padStart(3, '0');
-     }
-     
-     function setCookie(name, value) {
-         document.cookie = name + '=' + value + '; path=/';
-     }
-     
-     function getCookie(name) {
-         let cookies = document.cookie.split(';');
-         for (let cookie of cookies) {
-             let pair = cookie.split('=');
-             if (pair[0].trim() === name) {
-                 return pair[1];
+             // Update today's visit count
+             let today = new Date().toLocaleDateString();
+             let todayCount = parseInt(localStorage.getItem('todayCount')) || 0;
+             let lastVisitDate = localStorage.getItem('lastVisitDate');
+             if (lastVisitDate !== today) {
+                 todayCount = 0;
+                 localStorage.setItem('lastVisitDate', today);
              }
-         }
-         return null;
-     }
+             todayCount++;
+             localStorage.setItem('todayCount', todayCount);
+             document.getElementById('todaysVisitCount').textContent = todayCount.toString().padStart(3, '0');
      
-     // Update visit counts when the page loads
-     window.onload = updateVisitCounts;
-      </script>
+             // Update unique candidates visit count using cookies
+             let uniqueCandidatesCount = parseInt(getCookie('uniqueCandidatesCount')) || 0;
+             if (!getCookie('visited')) {
+                 uniqueCandidatesCount++;
+                 setCookie('visited', 'true');
+                 setCookie('uniqueCandidatesCount', uniqueCandidatesCount.toString());
+             }
+             document.getElementById('candidatesVisitCount').textContent = uniqueCandidatesCount.toString().padStart(3, '0');
+         }
+     
+         function setCookie(name, value) {
+             document.cookie = name + '=' + value + '; path=/';
+         }
+     
+         function getCookie(name) {
+             let cookies = document.cookie.split(';');
+             for (let cookie of cookies) {
+                 let pair = cookie.split('=');
+                 if (pair[0].trim() === name) {
+                     return pair[1];
+                 }
+             }
+             return null;
+         }
+     
+         // Update visit counts when the page loads
+         window.onload = updateVisitCounts;
+     </script>
+     
      
       
    </body>
