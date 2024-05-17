@@ -38,44 +38,6 @@
       <noscript>
          <link href="theme/css/no-js.css" type="text/css" rel="stylesheet">
       </noscript>
-
-      <!-- visit counter -->
-      <!-- <script>
-         // Function to check if the user has visited before
-         function checkVisited() {
-             if (localStorage.getItem('visited')) {
-                 return true; // User has visited before
-             } else {
-                 localStorage.setItem('visited', 'true');
-                 return false; // First-time visitor
-             }
-         }
-     
-         // Function to increment visit count
-         function incrementVisitCount() {
-             if (!localStorage.getItem('visitCount')) {
-                 localStorage.setItem('visitCount', '1');
-             } else {
-                 let visitCount = parseInt(localStorage.getItem('visitCount'));
-                 visitCount++;
-                 localStorage.setItem('visitCount', visitCount.toString());
-             }
-         }
-     
-         // Function to display visit count
-         function displayVisitCount() {
-             let visitCount = localStorage.getItem('visitCount') || '0';
-             document.getElementById('visitCount').innerText = visitCount;
-         }
-     
-         // Function to handle page load
-         window.onload = function() {
-             if (!checkVisited()) {
-                 incrementVisitCount();
-             }
-             displayVisitCount();
-         };
-     </script> -->
      
    </head>
    <body>
@@ -101,32 +63,7 @@
 
                      <div class="common-right clearfix">
                         <ul id="header-nav">
-                           <li class="ico-skip cf"><a href="#skipCont" title="">Skip to main content</a>
-                           </li>
-                           <!-- <li class="ico-site-search cf"><a href="javascript:void(0);" id="toggleSearch" title="Site Search"><img class="top" src="assets/images/ico-site-search.png" alt="Site Search" /></a> -->
-                              <!-- <div class="search-drop both-search">
-                                 <div class="google-find">
-                                    <form method="get" action="http://www.google.com/search" target="_blank">
-                                       <label for="search_key_g" class="notdisplay">Search</label>
-                                       <input type="text" name="q" value="" id="search_key_g"/> 
-                                       <input type="submit" value="Search" class="submit" /> 
-                                       <div>
-                                          <input type="radio" name="sitesearch" value="" id="the_web"/> 
-                                          <label for="the_web">The Web</label> 
-                                          <input type="radio" name="sitesearch" value="india.gov.in" checked id="the_domain"/> <label for="the_domain"> INDIA.GOV.IN</label>
-                                       </div>
-                                    </form>
-                                 </div>
-                                 <div class="find">
-                                    <form name="searchForm" action="">
-                                       <label for="search_key" class="notdisplay">Search</label>
-                                       <input type="text" name="search_key" id="search_key" onKeyUp="autoComplete()" autocomplete="off" required />
-                                       <input type="submit" value="Search" class="bttn-search"/>
-                                    </form>
-                                    <div id="auto_suggesion"></div>
-                                 </div>
-                              </div> -->
-                           </li>
+                           <li class="ico-skip cf"><a href="#skipCont" title="">Skip to main content</a></li>
 
                            <!-- font size increase / decrease-->
                            <li class="ico-accessibility cf"> 
@@ -155,14 +92,6 @@
                               <img class="top" src="assets/images/ico-sitemap.png" alt="Sitemap" /></a>
                            </li>
 
-                           <!-- <li class="hindi cmf_lan d-hide">
-                              <label class="de-lag"><span style="display: none;">Language</span>
-                                 <select class="head-lang" title="Select Language">
-                                    <option>English</option>
-                                    <option>हिन्दी</option>
-                                 </select>
-                              </label>
-                           </li> -->
                            <li class="language-en">
                               <a href="hindiVersion/Hindi-index.html">हिंदी</a>
                            </li>
@@ -422,94 +351,5 @@
 
          });
       </script>
-
-      <!-- visit count start -->
-      <!-- <script>
-         // Function to update visit counts
-         function updateVisitCounts() {
-             // Update this year's visit count
-             let thisYearCount = parseInt(localStorage.getItem('thisYearCount')) || 0;
-             thisYearCount++;
-             localStorage.setItem('thisYearCount', thisYearCount);
-             document.getElementById('thisYearsVisitCount').textContent = thisYearCount.toString().padStart(3, '0');
- 
-             // Update today's visit count
-             let today = new Date().toLocaleDateString();
-             let todayCount = parseInt(localStorage.getItem('todayCount')) || 0;
-             let lastVisitDate = localStorage.getItem('lastVisitDate');
-             if (lastVisitDate !== today) {
-                 todayCount = 0;
-                 localStorage.setItem('lastVisitDate', today);
-             }
-             todayCount++;
-             localStorage.setItem('todayCount', todayCount);
-             document.getElementById('todaysVisitCount').textContent = todayCount.toString().padStart(3, '0');
- 
-             // Update unique candidates visit count
-             let uniqueCandidatesCount = parseInt(localStorage.getItem('uniqueCandidatesCount')) || 0;
-             if (!localStorage.getItem('visited')) {
-                 uniqueCandidatesCount++;
-                 localStorage.setItem('visited', true);
-                 localStorage.setItem('uniqueCandidatesCount', uniqueCandidatesCount);
-             }
-             document.getElementById('candidatesVisitCount').textContent = uniqueCandidatesCount.toString().padStart(3, '0');
-         }
- 
-         // Update visit counts when the page loads
-         window.onload = updateVisitCounts;
-     </script> -->
-      <!-- visit count end -->
-
-      <script>
-         function updateVisitCounts() {
-             // Update this year's visit count
-             let thisYearCount = parseInt(localStorage.getItem('thisYearCount')) || 0;
-             thisYearCount++;
-             localStorage.setItem('thisYearCount', thisYearCount);
-             document.getElementById('thisYearsVisitCount').textContent = thisYearCount.toString().padStart(3, '0');
-     
-             // Update today's visit count
-             let today = new Date().toLocaleDateString();
-             let todayCount = parseInt(localStorage.getItem('todayCount')) || 0;
-             let lastVisitDate = localStorage.getItem('lastVisitDate');
-             if (lastVisitDate !== today) {
-                 todayCount = 0;
-                 localStorage.setItem('lastVisitDate', today);
-             }
-             todayCount++;
-             localStorage.setItem('todayCount', todayCount);
-             document.getElementById('todaysVisitCount').textContent = todayCount.toString().padStart(3, '0');
-     
-             // Update unique candidates visit count using cookies
-             let uniqueCandidatesCount = parseInt(getCookie('uniqueCandidatesCount')) || 0;
-             if (!getCookie('visited')) {
-                 uniqueCandidatesCount++;
-                 setCookie('visited', 'true');
-                 setCookie('uniqueCandidatesCount', uniqueCandidatesCount.toString());
-             }
-             document.getElementById('candidatesVisitCount').textContent = uniqueCandidatesCount.toString().padStart(3, '0');
-         }
-     
-         function setCookie(name, value) {
-             document.cookie = name + '=' + value + '; path=/';
-         }
-     
-         function getCookie(name) {
-             let cookies = document.cookie.split(';');
-             for (let cookie of cookies) {
-                 let pair = cookie.split('=');
-                 if (pair[0].trim() === name) {
-                     return pair[1];
-                 }
-             }
-             return null;
-         }
-     
-         // Update visit counts when the page loads
-         window.onload = updateVisitCounts;
-     </script>
-     
-     
-      
    </body>
 </html>
